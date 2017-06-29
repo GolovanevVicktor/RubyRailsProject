@@ -16275,3 +16275,65 @@ Processing by MicropostsController#create as HTML
 Completed 200 OK in 64ms (Views: 55.6ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-29 23:35:46 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.6ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (220.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "253d834f3102005b1960d49eb7834ed8b2fb4b37"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (23.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 316ms (Views: 303.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-06-29 23:35:52 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[36mMicropost Load (0.5ms)[0m  [1m[34mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 ORDER BY created_at DESC LIMIT $2 OFFSET $3[0m  [["user_id", 1], ["LIMIT", 30], ["OFFSET", 0]]
+  Rendered collection of microposts/_micropost.html.erb [30 times] (7.5ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (29.7ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "253d834f3102005b1960d49eb7834ed8b2fb4b37"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 112ms (Views: 77.6ms | ActiveRecord: 4.3ms)
+
+
+Started DELETE "/signout" for 127.0.0.1 at 2017-06-29 23:35:57 +0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"181FLnv0Llp6pYUgV7RKG+253IsRREt8HNhwd2EQrC7gEG+/oJxdBe9GTLDBJAGg698XDEzTEuzYxT7XAhUrUQ=="}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "253d834f3102005b1960d49eb7834ed8b2fb4b37"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "users" SET "remember_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["remember_token", "4d3e1bee233d2bdb71689cd8b2786bb43cc00875"], ["updated_at", "2017-06-29 20:35:57.107197"], ["id", 1]]
+  [1m[35m (49.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 54ms (ActiveRecord: 50.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-29 23:35:57 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 68.9ms | ActiveRecord: 0.3ms)
+
+
