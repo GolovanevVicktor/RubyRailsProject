@@ -18768,3 +18768,417 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.4ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (193.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (19.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 309ms (Views: 296.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/custom.self-0a399367a9ca846cd73be653c0f23c64d370a6a12efd241963ccea7b6d9e6dd2.css?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 16:48:44 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-30 17:04:05 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.3ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (169.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (24.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 263ms (Views: 250.7ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/custom.self-0a399367a9ca846cd73be653c0f23c64d370a6a12efd241963ccea7b6d9e6dd2.css?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-06-30 17:04:06 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-30 17:05:14 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.5ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 1224ms (Views: 1220.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/custom.self-008aab86a5cc6ac8aac626870149c4158d26266336e0dee29a1dd8543887502f.css?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:15 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-06-30 17:05:16 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-30 17:09:45 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.4ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 1228ms (Views: 1226.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/custom.self-3ff20208e507387f5d51bcb36eab8b95ec59784d0dfef77e766c37899bc52ebf.css?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-06-30 17:09:46 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-30 17:10:45 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.6ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1269ms (Views: 1267.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/custom.self-00ef140c24f4fa0a32d6539291bd0b5a387d6e9afe1d46f450c230b6662bba36.css?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-06-30 17:10:46 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-30 17:12:19 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.5ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 1376ms (Views: 1373.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/custom.self-9d08265d1c62922c13d1275ce53621322bd7d5adec9d6281f7da6ea013257d20.css?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-06-30 17:12:21 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-30 17:13:15 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.5ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1152ms (Views: 1150.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/custom.self-c159bf8c59534247f44d157bdc51e0e32e810444e6c1c176f9806d351b7fae34.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:16 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-30 17:13:53 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.4ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 1254ms (Views: 1252.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:54 +0300
+Started GET "/assets/custom.self-3ea3ac30f047863587a7ba76b03696ee7148db73337957ff3df90e796f5f3c87.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-06-30 17:13:55 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-30 17:14:27 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.3ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1141ms (Views: 1140.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/custom.self-06cfc0075c7d67ac74caf3d16733b10aa8bf227c5c640c1b20c4db6c05872bed.css?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-06-30 17:14:28 +0300
+Started GET "/" for 127.0.0.1 at 2017-06-30 17:17:00 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.4ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.0ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_shim.html.erb (5.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "7c6f7df6b46e85a08616c67ccb7f8a53f8095195"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 72ms (Views: 70.0ms | ActiveRecord: 0.4ms)
+
+
