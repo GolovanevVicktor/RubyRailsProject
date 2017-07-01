@@ -24690,3 +24690,151 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (1.4ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (214.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "9db3522573a4093810b18754f07f833a964873fc"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (21.7ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 324ms (Views: 310.9ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/application.self-f9e7c1541e1b8783561468c59162bd896007380f5a3799ef2169d3a3fdf40bed.css?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/custom.self-1b902cfaae748aa38d61cc4600badd26af41a533067635db3e1e1c875b388af9.css?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-transition.self-22f6ad859a160d38bc12dab58038e1bd153dac1f587ff1d52f293292ac6c52ba.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-affix.self-1bfe12975d90ba870ccbe0eef4c8bd08ce29f47f0eb135e3cfa5846ca99f76b9.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/static_pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-alert.self-d1b29780d7fbc5bcd8486f2dd22d50e00b7d44a8aa13dd0bd7510499f2a3265b.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-button.self-a7f23233d99b75f7977db57b9a3094a0e10746ffcc29be543cafaa4d0e85ac85.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-carousel.self-164e327a1b9b3eb767ec0ee7f9cb7274aca9cc39b988fa2629c6e813e9f44309.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-collapse.self-b0aaf8a38ef34e6d4622926d9840c3131a9b5495da2bf362d57d126a45833345.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-dropdown.self-b6514fb429802405e14c691417fd48a3467fc932ad087eafa1f643bf614f9834.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-modal.self-a1ba8cd0ece53696716902836f3fc9665326b97fc3539e246ca074d5ed9e8f0b.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-scrollspy.self-83e1245ad8a936f37a62990238dfe6f499935488177fd5365cb6291b0e6d2299.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-tab.self-8170fc59b889f7d7f25e963fb1a6a068bd9790cc747749555626a523e565bc2d.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-popover.self-f7ccec381e00cb3f9bde10f269cac0145d4926fa87aa0e0a184c5629a7c1d58d.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-tooltip.self-826a886511eac2d47459aa2beaced88ca108cfa09745e84e8e1d326da74ac502.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap-typeahead.self-a65cf8b6ece530a8ee80514d5b17ffe4b87a57ea4d9aa798eee1f7ad1f69c335.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/bootstrap.self-94f59a48294d99f8d9b7632cd5a1742670c7735fe37ec7c555aab939b635fdde.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/static_pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/assets/application.self-120f3cf1cb67bea53c4a2a57336b34ca04b04b55a55c38cf76ce20a147e5eff9.js?body=1" for 127.0.0.1 at 2017-07-01 15:54:04 +0300
+Started GET "/listOfHotels" for 127.0.0.1 at 2017-07-01 15:54:14 +0300
+Processing by StaticPagesController#listOfHotels as HTML
+  Rendering static_pages/listOfHotels.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.6ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered static_pages/listOfHotels.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "9db3522573a4093810b18754f07f833a964873fc"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 76ms (Views: 75.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/addHotel" for 127.0.0.1 at 2017-07-01 15:54:16 +0300
+Processing by StaticPagesController#addHotel as HTML
+  Rendering static_pages/addHotel.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "9db3522573a4093810b18754f07f833a964873fc"], ["LIMIT", 1]]
+  Rendered static_pages/addHotel.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-07-01 15:54:21 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "9db3522573a4093810b18754f07f833a964873fc"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 78ms (Views: 54.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2017-07-01 15:54:24 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "9db3522573a4093810b18754f07f833a964873fc"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 70.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-01 15:54:26 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.5ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered blocks/_preview.html.erb (0.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "9db3522573a4093810b18754f07f833a964873fc"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 58ms (Views: 55.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pageh" for 127.0.0.1 at 2017-07-01 15:54:29 +0300
+Processing by StaticPagesController#pageh as HTML
+  Rendering static_pages/pageh.html.erb within layouts/application
+  Rendered static_pages/pageh.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "9db3522573a4093810b18754f07f833a964873fc"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-07-01 15:54:33 +0300
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered blocks/_preview.html.erb (0.7ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.2ms)
+  Rendered blocks/_preview.html.erb (0.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."remember_token" = $1 LIMIT $2[0m  [["remember_token", "9db3522573a4093810b18754f07f833a964873fc"], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 68.7ms | ActiveRecord: 0.4ms)
+
+
