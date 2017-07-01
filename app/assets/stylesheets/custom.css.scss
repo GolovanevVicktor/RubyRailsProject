@@ -67,11 +67,11 @@ p {
 
 .container {
   max-width: 100%;
-  min-width: 750px;
+  min-width: 350px;
 }
 .navbar navbar-fixed-top navbar-inverse {
   max-width: 100%;
-  min-width: 750px;
+  min-width: 350px;
 }
 
 #logo {
@@ -189,12 +189,64 @@ input {
 
 .table_preview_entry {
   width: 100%;
-  min-width: 500px;
+  min-width: 700px;
   height: 250px;
   border-style: solid;
   border-width: 2px;
   border-collapse: collapse;
 }
+  .table_preview_div1 {
+    background: #222;
+    width: 100%;
+    height: 100%;
+    float: top;
+  }
+  .table_preview_div2 {
+    background: #444;
+    padding-left: 3%;
+    min-height: 30px;
+    max-height: 30px;
+    min-width: 250px;
+    width: 97%;
+  }
+  .table_preview_div3 {
+    background: #666;
+    padding-left: 3%;
+    min-height: 160px;
+    height: 100%;
+    min-width: 250px;
+    width: 97%;
+  }
+
+  .table_preview_div4 {
+    background: #888;
+    padding-left: 3%;
+    min-height: 30px;
+    max-height: 30px;
+    min-width: 250px;
+    width: 67%;
+    float: left;
+    float: bottom;
+  }
+  .table_preview_div5 {
+    background: #AAA;
+    min-height: 60px;
+    max-height: 60px;
+    min-width: 50px;
+    width: 30%;
+    float: right;
+  }
+  .table_preview_div6 {
+    background: #BBB;
+    padding-left: 3%;
+    min-height: 30px;
+    max-height: 30px;
+    min-width: 250px;
+    width: 67%;
+    float: left;
+    float: bottom;
+  }
+  
 
   TD, TH {
     padding: 3px; /* Поля вокруг содержимого таблицы */
@@ -211,13 +263,19 @@ input {
     max-height: 250px;
     max-width: 250px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
   }
   .td_preview_text {
     text-align: justify;
     vertical-align: text-top;
   }
-
+    .td_preview_text_div {
+      background: #111;
+    }
+      .btn-more {
+        width: 70%;
+        margin-top: 7px;
+      }
 
 .div_full_describtion {
   min-width: 1000px;
