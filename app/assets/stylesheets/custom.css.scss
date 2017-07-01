@@ -157,9 +157,7 @@ aside {
 }
 
 .root_body {
-  min-width: 750px;
-  width: 100%;
-}
+  min-width: 750px;}
 
 /* forms */
 
@@ -280,10 +278,6 @@ input {
   min-width: 1000px;
   margin-left: 10px;
 }
-
-.div_descr_1 + .div_descr_2 + .div_descr_3 + .div_descr_4 {
-  
-}
 .div_descr_1 {
   float: left;
   background-color: #222;
@@ -319,4 +313,8 @@ input {
 }
 .clear {
   clear: both;
+}
+
+.main_pic{
+  margin-bottom: 20px;
 }

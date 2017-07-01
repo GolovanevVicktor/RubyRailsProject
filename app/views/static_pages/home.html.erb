@@ -1,7 +1,7 @@
 <% provide(:title, '') %>
-<div class="center hero-unit">
-   	<h1 class="animated flash">TOP 5 hotels</h1>
-	<hr />
+<div class="main_pic"><%= image_tag("main.svg", alt: "Main.svg") %></div>
+<div class="center hero-unit main-page">
+    <a href="top"></a>
 	<!-- <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %> -->
 	<!-- <%= link_to image_tag("rails-logo.svg", alt: "Rails"), 'http://rubyonrails.org/' %> -->
 	<%= render 'blocks/preview' %>
@@ -14,5 +14,5 @@
     <br />
     <%= render 'blocks/preview' %>
     <br />
-
+    <h1 class="wow fadeInRight"> <a href="#top">Go top</a> </h1>
 </div>
