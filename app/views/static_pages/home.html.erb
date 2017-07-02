@@ -1,8 +1,20 @@
 <% provide(:title, '') %>
-<div class="main_pic"><%= image_tag("main.svg", alt: "Main.svg") %></div>
+
+<div class="main_pic">
+    <br /><br /><br /><br />
+    <div class="greeting_text">
+        <h1 class="greeting_text">Find the lowest price on the right hotel for you</h1>
+    </div>
+    <div class="slogan_text">
+        <center><h2><strong>
+'Hotel App' is the only hotel site that sends special investigators to visit, 
+photograph, review, and rate each hotel. We inspect in-person — just like your 
+mother-in-law.
+        </strong></h2></center></div>
+    </div>
+
 <div class="center hero-unit main-page">
-	<!-- <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %> -->
-	<!-- <%= link_to image_tag("rails-logo.svg", alt: "Rails"), 'http://rubyonrails.org/' %> -->
+	
 	<%= render 'blocks/preview' %>
     <br />
     <%= render 'blocks/preview' %>

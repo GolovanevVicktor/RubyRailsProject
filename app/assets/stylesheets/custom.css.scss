@@ -66,12 +66,13 @@ p {
 /* header */
 
 .container {
-  max-width: 100%;
-  min-width: 350px;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 400px;
 }
 .navbar navbar-fixed-top navbar-inverse {
   max-width: 100%;
-  min-width: 350px;
+  min-width: 820px;
 }
 
 #logo {
@@ -157,7 +158,9 @@ aside {
 }
 
 .root_body {
-  min-width: 750px;}
+  min-width: 820px;
+  margin-top: -20px;
+}
 
 /* forms */
 
@@ -316,10 +319,18 @@ input {
 }
 
 .main_pic{
-  margin-top: -20px;
+  float: top;
+  min-height: 350px;
+  margin-top: 0px;
   margin-bottom: 20px;
-  z-index: 98;
+  background-image: url("greeting_pic.jpg");
+  background-size: 100%;
+  background-position: 100% bottom;
+  color: white;
+  width: 100%;
 }
+
+
 #go_top_btn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -342,4 +353,14 @@ input {
 #open_list_btn {
     min-width: 75%;
     max-width: 75%;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
 }
