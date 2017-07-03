@@ -1,0 +1,57 @@
+<%= form_for @hotel, html: { multipart: true } do |f| %>
+ 
+  <% if @hotel.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@hotel.errors.count, "error") %> prohibited
+        this hotel from being saved:
+      </h2>
+      <ul>
+        <% @hotel.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+ 
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title, placeholder: "Your hotel name"%>
+  </p>
+
+ <p>
+    <%= f.label :star_rating %><br>
+    <%= f.select(:star_rating, options_for_select([['1', '1'], 
+                  ['2', '2'],['3', '3'],['4', '4'],['5', '5']])) %>
+  </p>
+
+  <p>
+    <%= f.label :breakfast %><br>
+    <%= f.select(:breakfast, options_for_select([['yes', 'yes'], 
+                      ['no', 'no']],{ include_blank: true }))  %>
+  </p>
+
+  <p>
+    <%= f.label :room_desc %><br>
+    <%= f.text_area :room_desc, placeholder: "Tell about your hotel" %>
+  </p>
+
+  <p>
+    <%= f.label :price %><br>
+    <%= f.text_field :price, placeholder: "Amount" %>
+  </p>
+
+  <p>
+    <%= f.label :address %><br>
+    <%= f.text_field :address, placeholder: "Tell your hotel address" %>
+  </p>
+
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.file_field :image %>
+  </div>
+  <p>
+    <%= f.submit %>
+  </p>
+ 
+<% end %>

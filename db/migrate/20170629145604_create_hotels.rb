@@ -7,10 +7,9 @@ class CreateHotels < ActiveRecord::Migration[5.1]
       t.text :room_desc
       t.string :price
       t.string :address
+      t.string :image
       t.integer :user_id
-
       t.timestamps
     end
-    add_index :hotels, [:user_id, :created_at]
   end
 end

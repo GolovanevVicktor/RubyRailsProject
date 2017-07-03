@@ -1,34 +1,41 @@
-<div class="div_preview_enrty">
-    <table class="table_preview_entry">
-        <tr>
-            <td class="td_preview_pic">
-                <div class="table_preview_div1">
-                    div 1 <br />
-                    Pic... <br />
-                </div>
-            </td>
-      		<td class="td_preview_text"> 
-              <div class"td_preview_text_div">
-                 <div class="table_preview_div2">
-                     div 2 - Title
-                 </div>
-                 <div class="table_preview_div3">
-                     div 3 <br />
-                     Info... <br />
-                 </div>
-                 <div class="table_preview_div4">
-                     div 4 - Rating
-                 </div>
-                 <div class="table_preview_div5">
-                     <%= link_to "More", pageh_path, class: "btn btn-large btn-primary btn-more" %> 
-                 </div>
-                 <div class="table_preview_div6">
-                     div 6 - Author
-                 </div>
-                 <div class="clear"></div>              
-              </div>             
-            </td>
-        </tr>
-    </table>
 
-</div>
+    <span class="content">
+		<div class="div_preview_enrty">
+    		<table class="table_preview_entry">
+       		 <tr>
+            	<td class="td_preview_pic">
+                	<div class="table_preview_div1">
+                		<%= image_tag hotel.image.thumb.url %>
+               		</div>
+           		</td>
+      				<td class="td_preview_text"> 
+             		 <div class"td_preview_text_div">
+               		  <div class="table_preview_div2">
+                		<%= hotel.title %>
+               		  </div>
+               			<div class="table_preview_div3">
+                 		<%= hotel.room_desc %>
+                      <div>
+                        <%= hotel.breakfast %>
+                      </div>
+                      <div>
+                        <%= hotel.address %>
+                      </div>
+               		  </div>
+                		<div class="table_preview_div4">
+               		    <%= hotel.star_rating %> stars
+               		  </div>
+               		  <div class="table_preview_div5">
+                		<%= link_to "More", hotel_path(hotel), class: "btn btn-large btn-primary btn-more" %> 
+               		  </div>
+              		  <div class="table_preview_div6">
+                		<%= hotel.price %>
+               		  </div>
+               		  <div class="clear"></div>              
+             		 </div>             
+            		</td>
+       		 </tr>
+   		 </table>
+		</div>
+	  </span>
+
