@@ -1,6 +1,6 @@
 <% provide(:title, '') %>
 <%= render 'blocks/show_hotel' %>
-<h2>Comments</h2>
+<div class="center hero-unit"><h2>Comments</h2>
 <% @hotel.comments.each do |comment| %> 
   <p>
     <strong>Comment:</strong>
@@ -35,4 +35,4 @@
     <strong>You should sign up to create a comment</strong>
   </p>
 <% end %>
-<%= link_to 'Back', root_path %>
+<%= link_to 'Back', root_path %></div>

@@ -286,10 +286,10 @@ input {
   margin-left: 10px;
 }
 .div_descr_1 {
-  float: left;
+  float: top;
   background-color: #222;
-  min-width: 50%;
-  max-width: 50%;
+  min-width: 100%;
+  max-width: 100%;
   min-height: 410px;
   mmax-height: 410px;
   img{
@@ -299,28 +299,36 @@ input {
 }
 .div_descr_2 {
   float: right;
+  text-align: justify;
   background-color: #444;
-  min-width: 50%;
-  max-width: 50%;
-  min-height: 1000px;
+  min-width: 100%;
+  max-width: 100%;
+  mmin-height: 1000px;
   mmax-height: 1000px;
 }
 .div_descr_3 {
   float: left;
-  float: top;
   background-color: #666;
-  min-width: 50%;
-  max-width: 50%;
-  min-height: 100px;
-  max-height: 100px;
+  min-width: 33%;
+  max-width: 33%;
+  min-height: 70px;
+  max-height: 70px;
 }
 .div_descr_4 {
   float: left;
   background-color: #888;
-  min-width: 50%;
-  max-width: 50%;
-  min-height: 490px;
-  mmax-height: 490px;
+  min-width: 34%;
+  max-width: 34%;
+  min-height: 70px;
+  max-height: 70px;
+}
+.div_descr_5 {
+  float: left;
+  background-color: #aaa;
+  min-width: 33%;
+  max-width: 33%;
+  min-height: 70px;
+  max-height: 70px;
 }
 .clear {
   clear: both;
