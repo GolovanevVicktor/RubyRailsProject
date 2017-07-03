@@ -25,6 +25,8 @@ gem 'rake', '12.0.0'
 gem 'bcrypt','3.1.11'
 gem 'listen'
 gem 'factory_girl_rails','4.8.0'
+gem 'carrierwave'
+gem 'mini_magick'
 group :doc do
   gem 'sdoc','0.4.2', require: false
 end

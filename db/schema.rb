@@ -15,20 +15,10 @@ ActiveRecord::Schema.define(version: 20170630055004) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: :cascade do |t|
-    t.string "title"
-    t.text "text"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id", "created_at"], name: "index_articles_on_user_id_and_created_at"
-  end
-
   create_table "comments", force: :cascade do |t|
-    t.string "commenter"
     t.text "body"
-    t.integer "article_id"
     t.integer "hotel_id"
+    t.string "user_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -40,18 +30,10 @@ ActiveRecord::Schema.define(version: 20170630055004) do
     t.text "room_desc"
     t.string "price"
     t.string "address"
+    t.string "image"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["user_id", "created_at"], name: "index_hotels_on_user_id_and_created_at"
-  end
-
-  create_table "microposts", force: :cascade do |t|
-    t.string "content"
-    t.integer "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
   end
 
   create_table "users", id: :serial, force: :cascade do |t|

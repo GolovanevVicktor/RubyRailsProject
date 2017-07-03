@@ -1,0 +1,38 @@
+<% provide(:title, '') %>
+<%= render 'blocks/show_hotel' %>
+<h2>Comments</h2>
+<% @hotel.comments.each do |comment| %> 
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+  <p>
+    <strong>user_name:</strong>
+    <%= comment.user_name %>
+  </p>
+  <% if signed_in? && @hotel.user_id == current_user.id %>
+    <p>
+    <%= link_to 'Destroy Comment', [comment.hotel, comment],
+                 method: :delete,
+                 data: { confirm: 'Are you sure?' } %>
+    </p>
+  <% end %>
+<% end %>
+<% if signed_in? %>
+  <h2>Add a comment:</h2>
+  <%= form_for([@hotel, @hotel.comments.build]) do |f| %>
+   <p>
+     <%= f.label :body %><br>
+     <%= f.text_area :body %>
+   </p>
+   <p>
+     <%= f.submit %>
+   </p>
+  <% end %>
+  <% else %>
+  </br>
+  <p>
+    <strong>You should sign up to create a comment</strong>
+  </p>
+<% end %>
+<%= link_to 'Back', root_path %>

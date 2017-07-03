@@ -1,92 +1,39 @@
-<div class="div_preview_enrty">
-    <table class="table_preview_entry">
-        <tr>
-            <td class="td_preview_pic">
-                <div class="table_preview_div1">
-                    div 1 <br />
-                    Pic... <br />
-                </div>
-            </td>
-      		<td class="td_preview_text"> 
-              <div class"td_preview_text_div">
-                 <div class="table_preview_div2">
-                     div 2 - Title
-                 </div>
-                 <div class="table_preview_div3">
-                     div 3 <br />
-                     Info... <br />
-                 </div>
-                 <div class="table_preview_div4">
-                     div 4 - Rating
-                 </div>
-                 <div class="table_preview_div5">
-                     <%= link_to "More", pageh_path, class: "btn btn-large btn-primary btn-more" %> 
-                 </div>
-                 <div class="table_preview_div6">
-                     div 6 - Author
-                 </div>
-                 <div class="clear"></div>              
-<<<<<<< HEAD
-=======
-
-
-              <!--
-              <ul>
-                <li><strong>Title</strong> <br />
-                <li>Some short information about hotel <br />
-                <li>Rating <br />
-                <br />
-                <li><i>Author</i>
-                <%= link_to "More", pageh_path, class: "btn btn-large btn-primary btn-more" %> 
-              </ul> 
-              -->
-
->>>>>>> 057907eb842ab32f466c450dccd668de0c63224f
-              </div>             
-            </td>
-        </tr>
-    </table>
-
-<<<<<<< HEAD
-=======
-
-   <!-- 
-   <div class="table_preview_div1">
-        div 1 <br />
-        Pic... <br />
-    </div>
-    <div class="table_preview_div2">
-        div 2 <br />
-        Title <br />
-    </div>
-    <div class="table_preview_div3">
-        div 3 <br />
-        Info... <br />
-    </div>
-    <div class="table_preview_div4">
-        div 4 <br />
-        Rating... <br />
-    </div>
-    <div class="table_preview_div5">
-        div 5 <br />
-        More_btn... <br />
-    </div>
-    <div class="table_preview_div6">
-        div 6 <br />
-        Author <br />
-    </div>
-    <div class="clear"></div> 
-    -->
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 057907eb842ab32f466c450dccd668de0c63224f
-</div>
+    <span class="content">
+		<div class="div_preview_enrty">
+    		<table class="table_preview_entry">
+       		 <tr>
+            	<td class="td_preview_pic">
+                	<div class="table_preview_div1">
+                		<%= image_tag hotel.image.thumb.url %>
+               		</div>
+           		</td>
+      				<td class="td_preview_text"> 
+             		 <div class"td_preview_text_div">
+               		  <div class="table_preview_div2">
+                		<%= hotel.title %>
+               		  </div>
+               			<div class="table_preview_div3">
+                 		<%= hotel.room_desc %>
+                      <div>
+                        <%= hotel.breakfast %>
+                      </div>
+                      <div>
+                        <%= hotel.address %>
+                      </div>
+               		  </div>
+                		<div class="table_preview_div4">
+               		    <%= hotel.star_rating %> stars
+               		  </div>
+               		  <div class="table_preview_div5">
+                		<%= link_to "More", hotel_path(hotel), class: "btn btn-large btn-primary btn-more" %> 
+               		  </div>
+              		  <div class="table_preview_div6">
+                		<%= hotel.price %>
+               		  </div>
+               		  <div class="clear"></div>              
+             		 </div>             
+            		</td>
+       		 </tr>
+   		 </table>
+		</div>
+	  </span>

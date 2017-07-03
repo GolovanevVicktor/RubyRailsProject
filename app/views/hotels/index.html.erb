@@ -1,0 +1,11 @@
+<% provide(:title, '') %>
+<div class="center hero-unit">
+   	<h1>TOP 5 hotels</h1>
+	<hr />
+	<% @hotel.each do |hotel| %>
+
+
+		<%= render :partial => 'blocks/preview', 
+					:locals => {:hotel => hotel} %>
+	<% end %>
+</div>
