@@ -11,7 +11,7 @@ scope :top5, -> {
     order("comments_count DESC").
     limit(5)
 }
-Hotel.top5
+#Hotel.top5
 validates :title, presence: true, length: {minimum:2, maximum:30}
 #VALID_BREAK_REGEX = /\A+yes|no/
 #validates :breakfast, presence: true, format: {with:VALID_BREAK_REGEX}
